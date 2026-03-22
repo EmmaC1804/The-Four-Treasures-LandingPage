@@ -1,77 +1,144 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #a3dfe7;
-    color: #000000;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #bae7ed;
+  color: #000;
 }
 
+/* Banner - unchanged */
 header {
-    background: url('Images/test.png') center 77%/100% no-repeat;
-    height: 325px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  background: url('Images/test.png') center 77% / 100% no-repeat;
+  height: 325px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 header h1 {
-    color: rgba(0, 0, 0, 0);
-    padding: 20px 40px;
-    border-radius: 10px;
-    font-size: 4.5rem;
+  color: rgba(0, 0, 0, 0);
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 4.5rem;
 }
 
-.logo {
-    width: 550px;
-    padding-top: 30px;
+.project-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 32px 40px;
+  font-family: "DM Serif Text", serif;
 }
 
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
+.academic-title {
+  margin: 0 0 28px;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
 }
 
-.description {
-    text-align: center;
+.content-grid {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 32px;
+  align-items: start;
 }
 
-.profile {
-    display: flex;
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.profile-photo {
+  width: 110px;
+  height: 150px;
+  object-fit: cover;
+  background-color: #56b3e2;
+  display: block;
+}
+
+.student-details h2 {
+  margin: 8px 0 10px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.student-details p {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.links-section h3 {
+  margin: 0 0 14px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.link-button {
+  display: block;
+  width: 70%;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding: 10px 16px;
+  background-color: #47a0c9;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease;
+}
+
+.link-button:hover {
+  background-color: #3ea4d8;
+}
+
+.right-panel {
+  text-align: center;
+  padding-top: 4px;
+}
+
+.right-panel h1 {
+  margin: 8px 0 12px;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.right-panel h2 {
+  margin: 0 0 18px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.right-panel p {
+  max-width: 700px;
+  margin: 0 auto 18px;
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-section {
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    margin-top: 40px;
-}
-
-.profile img {
-    width: 120px;
-    border-radius: 50%;
-}
-
-.links {
     text-align: center;
-    margin-top: 40px;
-}
+  }
 
-.links a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    background: #38bdf8;
-    color: black;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.links a:hover {
-    background: #0ea5e9;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    color: #94a3b8;
+  .profile-photo {
+    width: 140px;
+    height: 180px;
+  }
 }
