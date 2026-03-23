@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #bae7ed;
+  background: #c5e3e7;
   color: #000;
 }
 
@@ -54,27 +54,29 @@ header h1 {
 
 .profile-section {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 18px;
 }
 
 .profile-photo {
-  width: 110px;
-  height: 150px;
+  width: 300px;
+  height: 340px;
   object-fit: cover;
   background-color: #56b3e2;
   display: block;
 }
 
 .student-details h2 {
-  margin: 8px 0 10px;
+  margin: 0;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .student-details p {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .links-section h3 {
@@ -88,18 +90,18 @@ header h1 {
   display: block;
   width: 70%;
   box-sizing: border-box;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
   padding: 10px 16px;
-  background-color: #47a0c9;
+  background-color: #E7C9C5;
   color: #000;
   text-decoration: none;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   transition: background-color 0.2s ease;
 }
 
 .link-button:hover {
-  background-color: #3ea4d8;
+  background-color: #dd7d70;
 }
 
 .right-panel {
@@ -120,10 +122,15 @@ header h1 {
 }
 
 .right-panel p {
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto 18px;
   font-size: 1.15rem;
   line-height: 1.45;
+}
+
+.highlight{
+  color: #dd7d70;
+  text-decoration: underline;
 }
 
 @media (max-width: 900px) {
